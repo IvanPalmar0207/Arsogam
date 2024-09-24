@@ -1,0 +1,33 @@
+/*
+    Font Style
+*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+.sectionKhowUs{
+    background-image: url('../img/background.jpeg');
+    padding: 200px;
+    padding-bottom: 100px;
+    padding-top: 17%;
+}
+
+.containerKhowUsLogo{
+    text-align: center;
+}
+
+.infoKhowUs{
+    margin-top: 40px;
+}
+
+.infoKhowUs h2{
+    color: rgb(0, 101, 51);
+    font-family: "Belleza", sans-serif;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+.infoKhowUs p{
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

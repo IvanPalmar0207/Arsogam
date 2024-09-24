@@ -1,0 +1,62 @@
+/*
+    Font Style
+*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.containerNavBar{
+    display: flex;
+    position: absolute;
+    width: 98%;
+    left: 2%;
+    top: 3%;
+}
+
+.containerImage img{
+    width: 500px;
+    height: 290px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 5px;
+    margin-left: 1%;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(60, 60, 59);
+}
+
+.navBar ul{
+    height: 30%;
+    background-color: rgb(60, 60, 59);
+}
+
+.navBar ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.linkNav{
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: "Belleza", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    background-color: rgb(60, 60, 59);
+}
+
+.linkNav:hover{
+    transition: all ease-in 0.3s;
+    color: rgb(0, 167, 84);
+}

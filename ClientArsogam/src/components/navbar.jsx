@@ -1,35 +1,39 @@
 //React-Router-Dom
 import { Link } from 'react-router-dom'
+//Images
+import logoArsogam from './img/logoArsogam.jpeg'
 //Style
 import './style/navbar.css'
 
 function Navbar(){
     return(
-        <nav>
-            <div>Icon</div>
-            <div>
+        <div className='containerNavBar'>
+            <div className='containerImage'>
+                <img src={logoArsogam} alt="logoArsogam" />
+            </div>
+            <nav className='navBar'>
                 <ul>
                     <li>
-                        <Link to = '/' >Inicio</Link>
+                        <Link className='linkNav' to = '/' >Inicio</Link>
                     </li>
                     <li>
-                        <Link to = 'KhowUs' >Conocenos</Link>
+                        <Link className='linkNav' to = 'KhowUs' >Conocenos</Link>
                     </li>
                     <li>
-                        <Link to = 'Events'>Eventos</Link>
+                        <Link className='linkNav' to = 'Events'>Eventos</Link>
                     </li>
                     <li>
-                        <Link to = 'Services'>Servicios</Link>
+                        <Link className='linkNav' to = 'Services'>Servicios</Link>
                     </li>
                     <li>
-                        <Link to = 'News' >Noticias</Link>
+                        <Link className='linkNav' to = 'News' >Noticias</Link>
                     </li>
                     <li>
-                        <Link to = 'PQRS' >Pqrs</Link>
+                        <Link className='linkNav' to = 'PQRS' >Pqrs</Link>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     )
 }
 

@@ -14,7 +14,6 @@ import News from './pages/News';
 import Pqrs from './pages/PQR/Pqrs';
 //Components
 import Navbar from './components/navbar';
-import IconRight from './components/iconRight';
 
 function App() {
 
@@ -30,7 +29,6 @@ function App() {
                 <Route path = 'PQRS' element = {<Pqrs />} />
                 <Route path = '*' element = {<h1>Not Found</h1>} />
             </Routes>        
-        <IconRight />
         </BrowserRouter>
     )
 }

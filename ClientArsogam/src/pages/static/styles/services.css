@@ -1,0 +1,76 @@
+/*
+    Font Style
+*/
+@font-face {
+    font-family: "Bella";
+    src: url('../fonts/Bella.ttf');
+}
+
+.servicesSection{
+    background-image: url('../img/background.jpeg');
+    padding: 10px;
+    padding-bottom: 100px;
+    padding-top: 8%;
+    width: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.containerImageServices{
+    text-align: center;
+}
+
+.containerImageServices img{
+    width: 259px;
+    height: 179px;
+}
+
+.containerServices{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.containerInfoService img{
+    width: 450px;
+}
+
+.containerInfoService h2{
+    color: rgb(0, 101, 51);
+    font-family: "Bella";
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+.tecnicAssitance img:hover{
+    transition: all ease-in 0.3s;
+    transform: translate(0,-3%);
+    cursor: pointer;
+}
+
+.containerModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background: rgb(91, 184, 131);
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.containerIcon{
+    text-align: end;
+}
+
+.iconModal{
+    font-size: 1.5rem;
+}
+
+.iconModal:hover{
+    transition: all ease-in 0.3s;
+    color: white;
+    cursor: pointer;
+}

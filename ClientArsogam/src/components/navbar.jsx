@@ -1,7 +1,7 @@
 //React-Router-Dom
 import { Link } from 'react-router-dom'
 //Images
-import logoArsogam from './img/logoArsogam.jpeg'
+import logoArsogam from './img/logoArsogam.png'
 //Style
 import './style/navbar.css'
 

@@ -1,5 +1,7 @@
 //React-hooks
 import { useEffect } from "react"
+//Bull Image
+import bullImage from './static/img/knowUs/bullKhow.png'
 //Styles
 import './static/styles/KhowUs.css'
 
@@ -12,13 +14,11 @@ function KhowUs(){
     return(
         <section className="sectionKhowUs">
             <div className="containerKhowUsLogo">
-                <h2>
-                    Conocenos
-                </h2>
+                <img src = {bullImage} alt="bullKnow" />
             </div>
             <div className="infoKhowUs">
                 <h2>
-                    ¿Qué es Arsogam?
+                    Que es Arsogam?
                 </h2>
                 <p>
                     La Asociación Regenerativa y Sostenible de GANADEROS en la AMAZONIA ARSOGAM,
@@ -43,7 +43,7 @@ function KhowUs(){
             </div>
             <div className="infoKhowUs">
                 <h2>
-                    Misión
+                    Mision
                 </h2>
                 <p>
                     Trabajar, promover y difundir la ganadería regenerativa, protegiendo el medio ambiente y la biodiversidad,
@@ -52,7 +52,7 @@ function KhowUs(){
             </div>
             <div className="infoKhowUs">
                 <h2>
-                    Visión
+                    Vision
                 </h2>
                 <p>
                     Seremos una asociación comprometida con la actividad ganadera, actuando como agentes de cambio

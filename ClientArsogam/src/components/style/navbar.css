@@ -1,7 +1,10 @@
 /*
     Font Style
 */
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@font-face {
+    font-family: "Bella";
+    src: url('../fonts/Bella.ttf');
+}
 
 *{
     box-sizing: border-box;
@@ -19,7 +22,7 @@
 
 .containerImage img{
     width: 500px;
-    height: 290px;
+    height: 280px;
 }
 
 .navBar{
@@ -41,15 +44,15 @@
 
 .navBar ul li{
     display: inline-block;
-    margin: 10px;
+    margin: 18px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .linkNav{
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-decoration: none;
-    font-family: "Belleza", sans-serif;
+    font-family: "Bella";
     font-weight: bold;
     font-style: normal;
     color: white;

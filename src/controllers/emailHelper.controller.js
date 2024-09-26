@@ -3,11 +3,11 @@ import emailHelper from "../middlewares/emailHelper.middleware.js";
 
 //Send email
 const sendEmail = async (req, res) => {
-    const {from, subject, text} = req.body;
+    const {emailUser, fullName, phoneUser, requestUser} = req.body;
 
     try{
 
-        const response = await emailHelper(from, subject, text)
+        const response = await emailHelper(emailUser, fullName, phoneUser, requestUser)
         res.status(200).json(response)
 
     }catch(error){

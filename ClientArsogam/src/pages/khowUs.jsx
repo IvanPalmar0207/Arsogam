@@ -4,6 +4,8 @@ import { useEffect } from "react"
 import bullImage from './static/img/knowUs/bullKhow.png'
 //Styles
 import './static/styles/KhowUs.css'
+//FramerMotion
+import {motion} from 'framer-motion'
 
 function KhowUs(){
 
@@ -14,7 +16,17 @@ function KhowUs(){
     return(
         <section className="sectionKhowUs">
             <div className="containerKhowUsLogo">
-                <img src = {bullImage} alt="bullKnow" />
+                <motion.div
+                    initial = {{scale : 0}}                
+                    animate = {{rotate : 360, scale : 1}}
+                    transition={{
+                        type : "spring",
+                        stiffness : 450,
+                        damping : 90
+                    }}
+                >
+                    <img src = {bullImage} alt="bullKnow" />
+                </motion.div>
             </div>
             <div className="infoKhowUs">
                 <h2>

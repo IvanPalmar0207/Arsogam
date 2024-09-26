@@ -34,3 +34,27 @@
     font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+@media (max-width:1800px) {
+    .sectionKhowUs{
+        padding-top: 15%;
+    }
+}
+
+@media (max-width:900px) {
+    .sectionKhowUs{
+        padding: 50px;
+    }
+
+    .infoKhowUs{
+        margin-top: 70px;
+    }
+
+    .infoKhowUs h2{
+        font-size: 1.8rem;
+    }
+
+    .infoKhowUs p{
+        font-size: 0.9rem;
+    }
+}

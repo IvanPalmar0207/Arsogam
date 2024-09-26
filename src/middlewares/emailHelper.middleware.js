@@ -1,7 +1,7 @@
 //nodemailer
 import nodemailer from 'nodemailer'
 
-const emailHelper = async (from, subject, text) => {
+const emailHelper = async (email, fullName, phone, request) => {
     //Trasnporter
     const transporter = nodemailer.createTransport({
         service : 'gmail',
@@ -10,13 +10,15 @@ const emailHelper = async (from, subject, text) => {
             pass : 'ewoi bjaf susy nzxi'
         }
     })
+    
+    let emailStructure = `Nombre Completo: ${fullName}\nNumero de Celular: ${phone}\n\nSolicitud: \n\n${request}`
 
     //Set up emailOptions
     let mailOptions = {
-        from : from,
+        from : email,
         to : 'palmar.ivan0205@gmail.com',
-        subject : subject,
-        text : text
+        subject : 'Asistencia Tecnica',
+        text : emailStructure
     }
 
     //send the email

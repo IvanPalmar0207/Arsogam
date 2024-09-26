@@ -8,11 +8,12 @@ import tecnicAssistance from './static/img/services/tecnicAssistance.png'
 import './static/styles/services.css'
 //Material IU
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import FormTecnicAssis from "../components/formTecnicAssis";
 //Icons
 import { IoMdClose } from "react-icons/io";
+//FramerMotion
+import {motion} from 'framer-motion'
 
 function Services(){
         
@@ -32,7 +33,17 @@ function Services(){
     return(
         <section className="servicesSection" id="sectionService">
             <div className="containerImageServices">
-                <img src = {bullServices} alt = "bullServices" />
+                <motion.div
+                    initial = {{scale : 0}}
+                    animate = {{rotate : 360, scale : 1}}
+                    transition={{
+                        type : 'spring',
+                        stiffness : 450,
+                        damping : 90
+                    }}
+                >
+                    <img src = {bullServices} alt = "bullServices" />
+                </motion.div>
             </div>
 
             <div className="containerServices">
@@ -56,7 +67,17 @@ function Services(){
                         </Modal>
                     </div>
                     <div>
-                        <img src={tecnicAssistance} alt="tecnicAssitance" onClick={handleOpen}/>                        
+                        <motion.div className="motionImage"
+                            style={{
+                                width: 450,
+                                height: 450,
+                                borderRadius: 30,
+                                cursor : "pointer"
+                            }}
+                            whileHover={{ scale: 0.8 }}
+                        >
+                            <img src={tecnicAssistance} alt="tecnicAssitance" onClick={handleOpen}/>                        
+                        </motion.div>
                     </div>
                     <h2>
                         Asistencia Tecnica
@@ -64,7 +85,17 @@ function Services(){
                 </div>
 
                 <div className="containerInfoService">
-                    <img src={training} alt="trainingSessions" />
+                    <motion.div
+                        style={{
+                            width : 450,
+                            height : 450,
+                            borderRadius : 30,
+                            cursor : "pointer"
+                        }}
+                        whileHover={{scale : 0.8}}
+                    >
+                        <img src={training} alt="trainingSessions" />
+                    </motion.div>
                     <h2>
                         Capacitaciones
                     </h2>

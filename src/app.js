@@ -15,7 +15,10 @@ const app = express();
 
 //Cors
 app.use(
-    cors()
+    cors({
+        origin : 'http://localhost:5173',
+        credentials : true
+    })
 )
 
 //Morgan

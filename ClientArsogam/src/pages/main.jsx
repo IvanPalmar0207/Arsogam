@@ -6,6 +6,8 @@ import './static/styles/main.css'
 import CarouselHome from "../components/Slider"
 //Images
 import imgFarm from './static/img/knowFarm.png'
+//FramerMotion
+import { motion } from "framer-motion"
 
 function Home(){
 
@@ -17,7 +19,14 @@ function Home(){
         <section className="sectionHome">
             <div className="containerInfoHome">
                 <div className="containerTitle">
-                    <h1 className="titleMain">ARSOGAM</h1>
+                    <motion.div
+                        whileHover={{
+                            scale : 1.1,
+                            cursor : "pointer"
+                        }}                    
+                    >
+                        <h1 className="titleMain">ARSOGAM</h1>
+                    </motion.div>
                 </div>
                 <h3 className="subtitleMain">
                     ASOCIASION REGENERATIVA Y SOSTENIBLE

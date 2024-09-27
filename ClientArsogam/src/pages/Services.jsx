@@ -69,8 +69,8 @@ function Services(){
                     <div>
                         <motion.div className="motionImage"
                             style={{
-                                width: 450,
-                                height: 450,
+                                width: '100%',
+                                height: '100%',
                                 borderRadius: 30,
                                 cursor : "pointer"
                             }}
@@ -87,8 +87,7 @@ function Services(){
                 <div className="containerInfoService">
                     <motion.div
                         style={{
-                            width : 450,
-                            height : 450,
+                            width : '100%',
                             borderRadius : 30,
                             cursor : "pointer"
                         }}

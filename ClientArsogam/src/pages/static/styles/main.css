@@ -9,7 +9,8 @@
 }
 
 .containerInfoHome{
-    background-image: url('../img/background.jpeg');
+    background-image: url('../img/backgroundResponsive.jpeg');
+    background-size:cover;
     padding-top: 20%;
     width: 50%;
     justify-content: center;
